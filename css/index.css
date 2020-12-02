@@ -317,81 +317,6 @@ header .contenedor .hero .hero-textos .hero-text{
   font-family: var(--raleway);
 }
 
-.contact-form{
-  max-width: 500px;
-  display: flex;
-  margin: 90px auto 0;
-}
-
-.contact-form .container-contact-form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  border-radius: 5px;
-  min-height: 250px;
-  box-shadow: 0 0 6px rgba(0, 0, 0, .5);
-}
-
-.contact-form .container-contact-form form{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  height: 100%;
-}
-
-.formulario--validacion__incorrecto label{
-  color: #bb2929;
-}
-
-.formulario--validacion__incorrecto label .formulario__input{
-  border: 1px solid #bb2929;
-}
-
-.contact-form .container-contact-form form label{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-
-.contact-form .container-contact-form form label span{
-  text-align: center;
-  width: 100%;
-  font-size: 25px;
-  font-weight: 500;
-  font-family: var(--raleway);
-  margin-top: 10px;
-}
-
-.contact-form .container-contact-form form label input{
-  padding-left: 20px;
-  font-size: 14px;
-  width: 300px;
-  border: none;
-  outline: none;
-  margin: 15px;
-  height: 30px;
-}
-
-.contact-form .container-contact-form form .button{
-  width: 300px;
-  border-radius: 10px;
-  outline: none;
-  height: 40px;
-  border: none;
-  background: var(--backgLine);
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  margin-bottom: 10px;
-}
-
-.contact-form .container-contact-form form .button:active{
-  box-shadow: 0 0 6px rgba(0, 0, 0, .2);
-}
-
 footer{
   background-image: linear-gradient(60deg, #29323c 0%, #37414b 100%);
   min-height: 400px;
@@ -484,6 +409,53 @@ footer .container .contact-us .social-media ul li span{
   color: rgba(255, 255, 255, 0.87);
 }
 
+@media screen and (max-width: 590px){
+  header .contenedor .navegacion {
+    background: #007dca;
+    width: 50%;
+    height: 100vh;
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header .contenedor .navegacion ul{
+    border: 1px solid red;
+    display: block;
+    text-align: center;
+    height: 400px;
+  }
+}
+
 @media screen and (max-width: 425px){
-  
+  header .contenedor .hero .hero-textos .hero-title{
+    font-size: 45px;
+  }
+  header .contenedor .hero .hero-textos .line{
+    height: 2px;
+    background: var(--backgLine);
+    border-radius: 50%;
+    margin: auto;
+    max-width: 300px;
+  }
+
+  .wrapper .proyectos-titulo{
+    font-size: 32px;
+  }
+
+  .wrapper .span-proyectos{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  footer .container .contact-us .description-footer, .social-media {
+    margin: 20px auto;
+  }
+
+  footer .container .contact-us .description-footer .logo-footer h1 img {
+    text-align: center;
+    width: 260px;
+  }
 }
